@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: #012169;
+    color: #FFFFFF;
+    padding: 20px 40px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: #D00000; /* Um toque de vermelho de Londres no hover, ou uma cor mais clara! */
+    transition: 0.3s;
+  }
+
+.carrossel{
+    width: 100%; /* Garante 100% da largura visível da janela */
+    height: 450px; /* Mantém a altura fixa que você escolheu */
+    overflow: hidden;
+    position: relative;
+    background-color: #4e75cf;
+}
+
+.btn-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .prev { left: 10px; }  /* Botão da esquerda */
+  .next { right: 10px; } /* Botão da direita */
+
+.slides{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img{
+    width: 100%;
+    object-fit: contain; /* serve para a foto não esticar e nem achatar */ 
+    flex: 0 0 100%;
+    height: 100%;
+    object-position: center;
+
+}

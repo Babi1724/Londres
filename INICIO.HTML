@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./STYLES.CSS">
+    <link rel="icon" type="image/png" href="./IMG/bandeira.png">
+    <title>LONDRES</title>
+</head>
+
+<header>
+<h1> LONDRES</h1>
+<nav>
+    <ul>
+        <li>
+            <a href="./PAGES/HISTORIA.HTML">HISTORIA</a>
+        </li>
+        <li>
+            <a href="./PAGES/FAMILIAREAL.HTML">FAMILIA REAL</a>
+        </li>
+        <li>
+            <a href="./PAGES/NOTICIAS.HTML"> NOTICIAS</a>
+        </li>
+        <li>
+            <a href="./PAGES/CURIOSIDADES.HTML"> CURIOSIDADES</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<body>
+    <section class="carrossel">
+        <div class="slides">
+            <img src="./IMG/cabine telefonica.jpg" alt="cabine telefonica de londres">
+            <img src="./IMG/ponte de londres.jpg" alt="ponte de londres">
+            <img src="./IMG/palacio de buckghigam.jpg" alt="palacio de buckghigam">
+        </div>
+        <button class="btn-carrossel prev" onclick="mudarSlide(-1)">❮</button>
+        <button class="btn-carrossel next" onclick="mudarSlide(1)">❯</button>
+    </section>
+    
+    <script src="SCRIPT.JS"></script>
+</body>
+</html>
