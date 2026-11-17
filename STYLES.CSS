@@ -25,12 +25,14 @@ nav a:hover {
     transition: 0.3s;
   }
 
+/* Carrosel da pagina inicial  */
+
 .carrossel{
     width: 100%; /* Garante 100% da largura visível da janela */
     height: 450px; /* Mantém a altura fixa que você escolheu */
     overflow: hidden;
     position: relative;
-    background-color: #4e75cf;
+    background-color: #afc1e9;
 }
 
 .btn-carrossel {
@@ -49,6 +51,7 @@ nav a:hover {
   .prev { left: 10px; }  /* Botão da esquerda */
   .next { right: 10px; } /* Botão da direita */
 
+/* Slides de fotos do carrosel  */
 .slides{
     display: flex;
     width: 100%;
@@ -63,4 +66,33 @@ nav a:hover {
     height: 100%;
     object-position: center;
 
+}
+
+/* Caixa de boas Vindas */
+
+.caixa-boas-vindas {
+    width: 600px;               /* Define a largura exata da caixa */
+    height: 260px;              /* Define a altura igual à largura (forma o quadrado) */
+    
+    margin-top: 40px;           /* Distância do carrossel */
+    margin-left: 10px;          /* Diminui o espaço da esquerda (deixe menor para colar mais) */
+    margin-right: auto;         /* Empurra o restante para a direita */
+    
+    padding: 20px;              /* Espaço interno */
+    background-color: #f4f6f8;  /* Fundo cinza suave */
+    border-radius: 0;           /* Mantém os cantos retos (quadrado) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    /* Comandos mágicos para centralizar o texto no meio exato da caixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* Centraliza navertical */
+    align-items: center;        /* Centraliza na horizontal */
+    text-align: center;         /* Garante que o texto fique centralizado */
+}
+
+.caixa-boas-vindas p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px; /* Distância entre uma linha e outra */
 }
